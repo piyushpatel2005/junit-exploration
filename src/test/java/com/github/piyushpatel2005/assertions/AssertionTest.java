@@ -10,7 +10,7 @@ public class AssertionTest {
     void testBooleans() {
         assertTrue(true);
         assertFalse(false);
-        int value = 4;
+        int value = 6;
         assertTrue(Assertion.greaterThanFive(value), String.format("%d is not greater than 5", value));
         assertTrue("bar".equals("bar")); // not ideal, use assertEquals
     }
@@ -51,7 +51,13 @@ public class AssertionTest {
     }
 
     @Test
-    void futureFeature() {
-        fail("Not implemented");
+    void testThrows() {
+        assertThrows(ArithmeticException.class, () -> Assertion.divide(2,0));
+        assertDoesNotThrow(() -> Assertion.divide(4,2));
     }
+
+//    @Test
+//    void futureFeature() {
+//        fail("Not implemented");
+//    }
 }

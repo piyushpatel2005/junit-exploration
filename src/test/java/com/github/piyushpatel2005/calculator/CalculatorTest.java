@@ -48,5 +48,7 @@ class CalculatorTest {
         assertEquals(1, calculator.divide(3, 2));
         assertEquals(2, calculator.divide(4, 2));
         assertEquals(2, calculator.divide(12, 5));
+        assertThrows(IllegalArgumentException.class, () -> calculator.divide(100, 0));
+        assertDoesNotThrow(() -> calculator.divide(0, 100));
     }
 }
