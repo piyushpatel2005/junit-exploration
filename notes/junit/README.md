@@ -12,3 +12,6 @@ JUnit is the most popular Unit testing framework for Java language. This is also
 - [JUnit Assertions](junit-assertions/index.md)
 - [JUnit Lifecycle Methods](junit-lifecycle-methods/index.md)
 - [Parameterized Tests](parameterized-tests/index.md)
+- [Display Name Generator](display-name-generator/index.md)
+- [Tags and Filtering](tags-and-filtering/index.md)
+- [Nested Tests](nested-tests/index.md)

@@ -4,12 +4,16 @@
   <groupId>com.github.piyushpatel2005</groupId>
   <artifactId>junit-testing</artifactId>
   <version>1.0</version>
-  <name>JUnit Testing</name>
+  <packaging>pom</packaging>
+  <name>Java Testing</name>
   <url>http://maven.apache.org</url>
+  <modules>
+    <module>junit-examples</module>
+  </modules>
 
   <properties>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
   <dependencies>
@@ -28,7 +32,9 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>3.1.2</version>
           <configuration>
-            <testFailureIgnore>true</testFailureIgnore>
+            <testFailureIgnore>false</testFailureIgnore>
+<!--            <groups>fast</groups>-->
+<!--            <excludedGroups>slow,api</excludedGroups>-->
           </configuration>
         </plugin>
       </plugins>

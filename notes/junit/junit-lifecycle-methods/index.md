@@ -11,7 +11,10 @@ The JUnit lifecycle can be divided into three main phases: the setup phase, the 
 ## 1. Setup Phase:
 The setup phase is responsible for preparing the environment required for running a test. It includes initializing variables, setting up mock objects or test doubles, and any necessary configuration.
 
-To handle the setup phase, JUnit offers two annotations: `@BeforeAll` and `@BeforeEach`. The `@BeforeAll` annotation is used at the class level to define methods that will be executed before each test case in that class. On the other hand, the `@BeforeEach` annotation is used at the method level to define methods that will be executed before each individual test methods.
+To handle the setup phase, JUnit offers two annotations: `@BeforeAll` and `@BeforeEach`. The `@BeforeAll` annotation is used at the class level to define methods that will be executed before each test 
+case in that class. On the other hand, the `@BeforeEach` annotation is used on the method that will be executed 
+  before 
+  each individual test methods.
 
 Let's see an example of using `@BeforeEach` annotation:
 
